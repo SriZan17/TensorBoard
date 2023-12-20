@@ -212,7 +212,7 @@ def train(
                 tag_scalar_dict={"train_acc": train_acc, "test_acc": test_acc},
                 global_step=epoch,
             )
-
+            writer.flush()
             # Close the writer
             writer.close()
         else:

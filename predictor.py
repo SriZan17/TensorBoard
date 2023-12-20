@@ -23,6 +23,7 @@ else:
 
 class_names = ["Pizza", "Steak", "Sushi"]
 model = create_effnetb2(device=DEVICE, OUT_FEATURES=len(class_names))
+model = torch.compile(model)
 model.load_state_dict(torch.load("models/07_effnetb2_data_20_percent_10_epochs.pth"))
 
 
