@@ -8,7 +8,7 @@ from typing import Dict, List, Tuple
 
 def train_step(
     model: torch.nn.Module,
-    dataloader: torch.utils.data.DataLoader,
+    dataloader,
     loss_fn: torch.nn.Module,
     optimizer: torch.optim.Optimizer,
     device: torch.device,

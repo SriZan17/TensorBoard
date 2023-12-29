@@ -11,7 +11,7 @@ from going_modular.utils import save_model
 
 def main():
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    BATCH_SIZE = 32
+    BATCH_SIZE = 1024
     # image_path = helper_functions.download_data(
     #    source="https://github.com/mrdbourke/pytorch-deep-learning/raw/main/data/pizza_steak_sushi.zip",
     #    destination="pizza_steak_sushi",
